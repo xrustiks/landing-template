@@ -31,10 +31,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.hero-section {
-  
-}
-
 .hero-section img {
   position: absolute;
   left: 40vw;
@@ -43,10 +39,10 @@ h1, h2, h3, h4, h5, h6 {
   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
   -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 80%);
 
-  
+  z-index: -1;
 }
 
-main-header {
+.main-header {
   height: 100vh;
 }
 
@@ -56,11 +52,27 @@ main-header {
 
 .main-title {
   font-size: calc(var(--index) * 7);
-  
-  width: min-content;
+  line-height: .9;
 
   position: absolute;
   bottom: 10vh;
-  line-height: .9;
+
+  width: min-content;
 }
 
+.gallery {
+  display: flex;
+
+}
+
+.gallery > * {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery img {
+  width: calc(var(--index) * 15);
+}
