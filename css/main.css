@@ -20,12 +20,47 @@
 
 body {
   background-color: black;
+
+  font-family: 'Roboto', sans-serif;
   color: white;
-  overflow: hidden;
+
+  overflow-x: hidden;
 }
 
-.bear {
-  width: 60%;
-  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
-  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
+.hero-section {
+  
+}
+
+.hero-section img {
+  position: absolute;
+  left: 40vw;
+  width: calc(var(--index) * 40);
+
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 80%);
+
+  
+}
+
+main-header {
+  height: 100vh;
+}
+
+.container {
+  padding: 0vh 7vw;
+}
+
+.main-title {
+  font-size: calc(var(--index) * 7);
+  
+  width: min-content;
+
+  position: absolute;
+  bottom: 10vh;
+  line-height: .9;
+}
+
