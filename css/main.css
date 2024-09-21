@@ -1,5 +1,5 @@
 * {
-  /* border: 1px solid red; */
+  border: 1px solid yellow;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,8 +7,9 @@
 
 :root {
   --index: calc(1vw + 1vh);
-  --color-header: black;
-  --color-text: white;
+  --color-header: white;
+  --color-text: silver;
+  --gallery-gap: calc(var(--index) * 5);
 }
 
 /*
@@ -31,13 +32,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header section */
 .hero-section img {
   position: absolute;
   left: 40vw;
-  width: calc(var(--index) * 40);
+  width: calc(var(--index) * 30);
 
   mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
-  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 80%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
 
   z-index: -1;
 }
@@ -51,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-title {
-  font-size: calc(var(--index) * 7);
+  font-size: calc(var(--index) * 5);
   line-height: .9;
 
   position: absolute;
@@ -60,19 +66,57 @@ h1, h2, h3, h4, h5, h6 {
   width: min-content;
 }
 
+/* Main section */
 .gallery {
   display: flex;
-
+  padding: calc(var(--index) * 4) 0;
 }
 
 .gallery > * {
   flex: 1;
 
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
-.gallery img {
-  width: calc(var(--index) * 15);
+.gallery__item {
+  /* border: 1px solid red; */
+
+  font-size: 1.5vh;
+
+  max-width: calc(var(--index) * 15);
+  margin-bottom: var(--gallery-gap);
+  border-radius: 8px;
+}
+
+.gallery__left {
+  align-items: flex-end;
+}
+
+.gallery__left .gallery__item {
+  margin-right: 20px;
+}
+
+.gallery__right {
+  align-items: flex-start;
+}
+
+.gallery__right .gallery__item {
+  margin-left: 20px;
+}
+
+.text-block {
+  color: var(--color-text);
+}
+
+.text-block__h {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--color-header);
+  margin-bottom: 0.5rem;
+}
+
+.text-block__p {
+  font-size: 1rem;
+  line-height: 1.4;
 }
