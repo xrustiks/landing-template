@@ -1,5 +1,5 @@
 * {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -52,6 +52,10 @@ p {
   height: 100vh;
 }
 
+.main-title {
+  z-index: 2;
+}
+
 .container {
   padding: 0vh 7vw;
 }
@@ -87,6 +91,8 @@ p {
   max-width: calc(var(--index) * 15);
   margin-bottom: var(--gallery-gap);
   border-radius: 8px;
+
+  z-index: 1;
 }
 
 .gallery__left {
