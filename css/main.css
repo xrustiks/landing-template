@@ -105,21 +105,19 @@ p {
 }
 
 .gallery__left {
-  /* align-items: flex-end; */
+  align-items: flex-end;
 }
 
 .gallery__left .gallery__item {
-  /* margin-right: 20px; */
-  align-self: center;
+  margin-right: 20px;
 }
 
 .gallery__right {
-  /* align-items: flex-start; */
+  align-items: flex-start;
 }
 
 .gallery__right .gallery__item {
-  /* margin-left: 20px; */
-  align-self: center;
+  margin-left: 20px;
 }
 
 .text-block {

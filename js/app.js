@@ -22,8 +22,8 @@ if (ScrollTrigger.isTouch !== 1) {
   const itemsL = document.querySelectorAll('.gallery__left .gallery__item');
 
   itemsL.forEach(item => {
-    gsap.fromTo(item, { x: -100, opacity: 0 }, {
-      opacity: 1, x: 0,
+    gsap.fromTo(item, { x: -60, opacity: 0, scale: 0.9 }, {
+      opacity: 1, x: 0, scale: 1,
       scrollTrigger: {
         trigger: item,
         scrub: true,
@@ -35,8 +35,8 @@ if (ScrollTrigger.isTouch !== 1) {
   const itemsR = document.querySelectorAll('.gallery__right .gallery__item');
 
   itemsR.forEach(item => {
-    gsap.fromTo(item, { x: +100, opacity: 0 }, {
-      opacity: 1, x: 0,
+    gsap.fromTo(item, { x: 60, opacity: 0, scale: 0.9 }, {
+      opacity: 1, x: 0, scale: 1,
       scrollTrigger: {
         trigger: item,
         scrub: true,
