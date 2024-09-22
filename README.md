@@ -1,3 +1,3 @@
-# landing-template
+# wild-predators
 
-So far, this is just a template for landing websites.
+Beautiful gallery of wild animals
