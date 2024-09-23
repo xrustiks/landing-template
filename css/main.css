@@ -75,6 +75,10 @@ p {
 }
 
 /* Main section */
+.portfolio {
+  margin-bottom: 10vh;
+}
+
 .gallery {
   display: flex;
   padding: calc(var(--index) * 4) 0;
