@@ -42,6 +42,11 @@ p {
 }
 
 /* Bear section */
+header {
+  position: relative;
+  height: 100vh;
+}
+
 .bear-section {
   margin-bottom: calc(var(--index) * 10);
 }
@@ -58,16 +63,14 @@ p {
 }
 
 .bear-caption {
-  height: 100vh;
-  padding: 0vh 7vw;
+  position: absolute;
+  left: 7vw;
+  bottom: 10vh;
 }
 
 .bear-title {
   font-size: calc(var(--index) * 5);
   line-height: .9;
-
-  position: absolute;
-  bottom: 10vh;
 
   width: min-content;
 
