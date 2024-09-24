@@ -7,8 +7,6 @@
 
 :root {
   --index: calc(1vw + 1vh);
-  --color-header: white;
-  --color-text: silver;
   --gallery-gap: calc(var(--index) * 5);
 }
 
@@ -120,22 +118,6 @@ header {
 
 .gallery__right .gallery__item {
   margin-left: 20px;
-}
-
-.text-block {
-  color: var(--color-text);
-}
-
-.text-block__h {
-  font-size: 2rem;
-  line-height: 2.4rem;
-  color: var(--color-header);
-  margin-bottom: 0.5rem;
-}
-
-.text-block__p {
-  font-size: 1rem;
-  line-height: 1.4;
 }
 
 /* Panter section */
